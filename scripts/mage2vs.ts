@@ -176,8 +176,8 @@ program
 
     let createDbPromise = function () {
       console.log(' == CREATING NEW DATABASE ==')
-      return exec('node', [
-        'scripts/db.js',
+      return exec('npm run', [
+        'db7',
         'new',
         `--indexName=${env.INDEX_NAME}`
       ], { env: env, shell: true })
